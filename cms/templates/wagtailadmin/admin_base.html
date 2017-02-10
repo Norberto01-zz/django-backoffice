@@ -1,0 +1,11 @@
+{% overextends "wagtailadmin/admin_base.html" %}
+{% load staticfiles %}
+
+{% block branding_favicon %}
+    <title>Prepyme</title>
+{#    <link rel="shortcut icon" href="{% static 'images/fav.ico' %}" />#}
+    <link rel="shortcut icon" href="{% static 'images/fav.ico' %}" />
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/prepyme.css' %}">#}
+    <link rel="stylesheet" href="{% static 'css/prepyme.css' %}" type="text/css" />
+
+{% endblock %}

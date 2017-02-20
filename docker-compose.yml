@@ -1,12 +1,12 @@
 db:
   image: mysql:latest
   volumes:
-    - ./dbdata/prepyme:/var/lib/mysql
+    - ./dbdata/django-backoffice:/var/lib/mysql
   ports:
     - "3306:3306"
   environment:
     - MYSQL_ROOT_PASSWORD=root
-    - MYSQL_DATABASE=prepyme
+    - MYSQL_DATABASE=djangobackoffice
 web:
   build: .
   command: python manage.py runserver 0.0.0.0:8000
